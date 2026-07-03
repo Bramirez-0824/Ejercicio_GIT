@@ -10,7 +10,30 @@ namespace Ejercicio_GIT
     {
         static void Main(string[] args)
         {
+
+            double resultado, num1 = 5,num2 = 10;
+            Console.WriteLine("1. Suma\n" +
+                "2. Resta\n" +
+                "3. Multiplicacion\n" +
+                "Selecciona una opción:");
+            int opcion = Convert.ToInt32(Console.ReadLine());
+            switch (opcion)
+            {
+                case 1:
+                    resultado = Suma(num1,num2);
+                    Console.WriteLine(resultado);
+                    break;
+                case 2:
+                    resultado = Resta(num1, num2);
+                    Console.WriteLine(resultado);
+                    break;
+                case 3:
+                    resultado = Multiplicacion(num1, num2);
+                    Console.WriteLine(resultado);
+                    break;
+            }
         }
+
         static double Suma(double num1,double num2)
         {
             double resultado = num1 + num2;
